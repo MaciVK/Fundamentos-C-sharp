@@ -46,16 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form04CambiarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form04CambiarForm.Designer.cs">
+      <DependentUpon>Form04CambiarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormConversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConversion.Designer.cs">
+      <DependentUpon>FormConversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSumar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSumar.Designer.cs">
+      <DependentUpon>FormSumar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form04CambiarForm.resx">
+      <DependentUpon>Form04CambiarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConversion.resx">
+      <DependentUpon>FormConversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSumar.resx">
+      <DependentUpon>FormSumar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
