@@ -47,51 +47,57 @@ namespace Fundamentos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 32);
+            this.label1.Location = new System.Drawing.Point(64, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Posicion X:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(89, 93);
+            this.label2.Location = new System.Drawing.Point(67, 76);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 17);
+            this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Posicion Y:";
             // 
             // txtPosicionX
             // 
-            this.txtPosicionX.Location = new System.Drawing.Point(167, 32);
+            this.txtPosicionX.Location = new System.Drawing.Point(125, 26);
+            this.txtPosicionX.Margin = new System.Windows.Forms.Padding(2);
             this.txtPosicionX.Name = "txtPosicionX";
-            this.txtPosicionX.Size = new System.Drawing.Size(100, 22);
+            this.txtPosicionX.Size = new System.Drawing.Size(76, 20);
             this.txtPosicionX.TabIndex = 2;
             this.txtPosicionX.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtPosicionY
             // 
-            this.txtPosicionY.Location = new System.Drawing.Point(167, 87);
+            this.txtPosicionY.Location = new System.Drawing.Point(125, 71);
+            this.txtPosicionY.Margin = new System.Windows.Forms.Padding(2);
             this.txtPosicionY.Name = "txtPosicionY";
-            this.txtPosicionY.Size = new System.Drawing.Size(100, 22);
+            this.txtPosicionY.Size = new System.Drawing.Size(76, 20);
             this.txtPosicionY.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(361, 32);
+            this.label3.Location = new System.Drawing.Point(271, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 17);
+            this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Red";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(361, 72);
+            this.label4.Location = new System.Drawing.Point(271, 58);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 17);
+            this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "Green";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -99,38 +105,43 @@ namespace Fundamentos
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(361, 113);
+            this.label5.Location = new System.Drawing.Point(271, 92);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(36, 17);
+            this.label5.Size = new System.Drawing.Size(28, 13);
             this.label5.TabIndex = 6;
             this.label5.Text = "Blue";
             // 
             // txtRed
             // 
-            this.txtRed.Location = new System.Drawing.Point(432, 32);
+            this.txtRed.Location = new System.Drawing.Point(324, 26);
+            this.txtRed.Margin = new System.Windows.Forms.Padding(2);
             this.txtRed.Name = "txtRed";
-            this.txtRed.Size = new System.Drawing.Size(100, 22);
+            this.txtRed.Size = new System.Drawing.Size(76, 20);
             this.txtRed.TabIndex = 7;
             // 
             // txtGreen
             // 
-            this.txtGreen.Location = new System.Drawing.Point(432, 72);
+            this.txtGreen.Location = new System.Drawing.Point(324, 58);
+            this.txtGreen.Margin = new System.Windows.Forms.Padding(2);
             this.txtGreen.Name = "txtGreen";
-            this.txtGreen.Size = new System.Drawing.Size(100, 22);
+            this.txtGreen.Size = new System.Drawing.Size(76, 20);
             this.txtGreen.TabIndex = 8;
             // 
             // txtBlue
             // 
-            this.txtBlue.Location = new System.Drawing.Point(432, 113);
+            this.txtBlue.Location = new System.Drawing.Point(324, 92);
+            this.txtBlue.Margin = new System.Windows.Forms.Padding(2);
             this.txtBlue.Name = "txtBlue";
-            this.txtBlue.Size = new System.Drawing.Size(100, 22);
+            this.txtBlue.Size = new System.Drawing.Size(76, 20);
             this.txtBlue.TabIndex = 9;
             // 
             // btnPosicion
             // 
-            this.btnPosicion.Location = new System.Drawing.Point(125, 147);
+            this.btnPosicion.Location = new System.Drawing.Point(107, 119);
+            this.btnPosicion.Margin = new System.Windows.Forms.Padding(2);
             this.btnPosicion.Name = "btnPosicion";
-            this.btnPosicion.Size = new System.Drawing.Size(125, 66);
+            this.btnPosicion.Size = new System.Drawing.Size(94, 54);
             this.btnPosicion.TabIndex = 10;
             this.btnPosicion.Text = "Posicion";
             this.btnPosicion.UseVisualStyleBackColor = true;
@@ -138,9 +149,10 @@ namespace Fundamentos
             // 
             // btnColor
             // 
-            this.btnColor.Location = new System.Drawing.Point(397, 146);
+            this.btnColor.Location = new System.Drawing.Point(298, 119);
+            this.btnColor.Margin = new System.Windows.Forms.Padding(2);
             this.btnColor.Name = "btnColor";
-            this.btnColor.Size = new System.Drawing.Size(135, 67);
+            this.btnColor.Size = new System.Drawing.Size(101, 54);
             this.btnColor.TabIndex = 11;
             this.btnColor.Text = "Color";
             this.btnColor.UseVisualStyleBackColor = true;
@@ -149,17 +161,18 @@ namespace Fundamentos
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 244);
+            this.label6.Location = new System.Drawing.Point(10, 198);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(364, 17);
+            this.label6.Size = new System.Drawing.Size(272, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "Info:Dentro de la clase Color tenemos un metodo From...";
             // 
             // Form04CambiarForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 273);
+            this.ClientSize = new System.Drawing.Size(477, 222);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnColor);
             this.Controls.Add(this.btnPosicion);
@@ -173,6 +186,7 @@ namespace Fundamentos
             this.Controls.Add(this.txtPosicionX);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form04CambiarForm";
             this.Text = "Form04CambiarForm";
             this.ResumeLayout(false);

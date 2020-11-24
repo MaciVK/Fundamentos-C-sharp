@@ -32,6 +32,35 @@ namespace Fundamentos
             int posX, posY;
             posX = int.Parse(txtPosicionX.Text);
             posY = int.Parse(this.txtPosicionY.Text);
+            //Sintaxis IF
+            if (posX > 0)
+            {
+                this.label1.Text = "Positivo";
+            }
+            else if (posX == 0)
+            {
+                this.label1.Text = "Zero";
+            }
+            else
+            {
+                this.label1.Text = "Negativo";
+            }
+            //Sintaxis Switch
+            int numero = 1;
+            switch (numero)
+            {
+                case 0:
+                case 1:
+                    this.label1.Text = "Valor 0 o 1";
+                    break;
+                case 2: 
+                    this.label2.Text = "Valor 2";
+                    break;
+                default:
+                    this.label1.Text = "Otros valores";
+                    break;
+            }
+
             btnPosicion.Location = new Point(posX, posY);
 
         }
