@@ -118,6 +118,24 @@
     <Compile Include="Form14SeleccionMultiple.Designer.cs">
       <DependentUpon>Form14SeleccionMultiple.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form15ColeccionNumeroListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form15ColeccionNumeroListBox.Designer.cs">
+      <DependentUpon>Form15ColeccionNumeroListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form16MetodoReferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16MetodoReferencia.Designer.cs">
+      <DependentUpon>Form16MetodoReferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form16TiendaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16TiendaProductos.Designer.cs">
+      <DependentUpon>Form16TiendaProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConversion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +185,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form14SeleccionMultiple.resx">
       <DependentUpon>Form14SeleccionMultiple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form15ColeccionNumeroListBox.resx">
+      <DependentUpon>Form15ColeccionNumeroListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form16MetodoReferencia.resx">
+      <DependentUpon>Form16MetodoReferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form16TiendaProductos.resx">
+      <DependentUpon>Form16TiendaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormConversion.resx">
       <DependentUpon>FormConversion.cs</DependentUpon>

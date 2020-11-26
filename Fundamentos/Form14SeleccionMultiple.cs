@@ -33,6 +33,29 @@ namespace Fundamentos
             {
                 indices += numero+",";
             }
+            
+            foreach(object objeto in this.lstElementos.SelectedItems)
+            {
+                items += objeto + ",";
+            }
+            this.lblIndices.Text = indices.Trim(',');
+            this.lblSeleccionados.Text = items.Trim(',');
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            //foreach(int indice in this.lstElementos.SelectedIndices)
+            //{
+            //    this.lstElementos.Items.RemoveAt(indice);
+            //}
+            //SI ELIMINAMOS MULTIPLES COSAS DESDE UNA COLECCION, HAY QUE HACERLO CON UN BUCLE for INVERSO
+            int numelementos = this.lstElementos.SelectedIndices.Count-1;
+            for (int i = numelementos; i >= 0; i--)
+            {
+                int seleccionado = this.lstElementos.SelectedIndices[i];
+                this.lstElementos.Items.RemoveAt(seleccionado);
+            }
+
         }
     }
 }
