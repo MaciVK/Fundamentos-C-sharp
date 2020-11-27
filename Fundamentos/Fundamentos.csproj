@@ -136,6 +136,36 @@
     <Compile Include="Form16TiendaProductos.Designer.cs">
       <DependentUpon>Form16TiendaProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form17MetodosEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form17MetodosEvento.Designer.cs">
+      <DependentUpon>Form17MetodosEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form18ColeccionesNOGraficas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form18ColeccionesNOGraficas.Designer.cs">
+      <DependentUpon>Form18ColeccionesNOGraficas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form19MetodosEventoColecciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form19MetodosEventoColecciones.Designer.cs">
+      <DependentUpon>Form19MetodosEventoColecciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form20SumarBotonesColeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form20SumarBotonesColeccion.Designer.cs">
+      <DependentUpon>Form20SumarBotonesColeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form21TablaMultiplicar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form21TablaMultiplicar.Designer.cs">
+      <DependentUpon>Form21TablaMultiplicar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConversion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +224,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form16TiendaProductos.resx">
       <DependentUpon>Form16TiendaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form17MetodosEvento.resx">
+      <DependentUpon>Form17MetodosEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form18ColeccionesNOGraficas.resx">
+      <DependentUpon>Form18ColeccionesNOGraficas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form19MetodosEventoColecciones.resx">
+      <DependentUpon>Form19MetodosEventoColecciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form20SumarBotonesColeccion.resx">
+      <DependentUpon>Form20SumarBotonesColeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form21TablaMultiplicar.resx">
+      <DependentUpon>Form21TablaMultiplicar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormConversion.resx">
       <DependentUpon>FormConversion.cs</DependentUpon>
