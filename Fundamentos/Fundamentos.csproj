@@ -166,6 +166,30 @@
     <Compile Include="Form21TablaMultiplicar.Designer.cs">
       <DependentUpon>Form21TablaMultiplicar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form22TemperaturasAnuales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form22TemperaturasAnuales.Designer.cs">
+      <DependentUpon>Form22TemperaturasAnuales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form23ControlesEnEjecucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form23ControlesEnEjecucion.Designer.cs">
+      <DependentUpon>Form23ControlesEnEjecucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form24SotreoPrimitiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form24SotreoPrimitiva.Designer.cs">
+      <DependentUpon>Form24SotreoPrimitiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form25PruebaClases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form25PruebaClases.Designer.cs">
+      <DependentUpon>Form25PruebaClases.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConversion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +264,18 @@
     <EmbeddedResource Include="Form21TablaMultiplicar.resx">
       <DependentUpon>Form21TablaMultiplicar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form22TemperaturasAnuales.resx">
+      <DependentUpon>Form22TemperaturasAnuales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form23ControlesEnEjecucion.resx">
+      <DependentUpon>Form23ControlesEnEjecucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form24SotreoPrimitiva.resx">
+      <DependentUpon>Form24SotreoPrimitiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form25PruebaClases.resx">
+      <DependentUpon>Form25PruebaClases.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormConversion.resx">
       <DependentUpon>FormConversion.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,6 +303,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProyectoClases\ProyectoClases.csproj">
+      <Project>{402b8cca-5e58-4752-a0f8-fdef82961c73}</Project>
+      <Name>ProyectoClases</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

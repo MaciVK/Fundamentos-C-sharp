@@ -53,7 +53,7 @@ namespace Fundamentos
             //this.DobleReferencia(ref numero);
             // //Llamamos al metodo que devuelve el doble
             this.lblResultado.Text ="Doble: "+ this.GetDoble(numero).ToString();
-
+            
         }
     }
 }

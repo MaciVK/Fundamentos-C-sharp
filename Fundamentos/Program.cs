@@ -16,7 +16,8 @@ namespace Fundamentos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form21TablaMultiplicar());
+            Application.Run(new Form25PruebaClases());
+
         }
     }
 }

@@ -15,24 +15,25 @@ namespace Fundamentos
         List<TextBox> cajas;
         public Form21TablaMultiplicar()
         {
-            cajas = new List<TextBox>();
             InitializeComponent();
+            cajas = new List<TextBox>();
             foreach (Control caja in this.gbxResultados.Controls)
             {
+                if(caja is TextBox) { 
                 TextBox cajaMultiplicar = (TextBox)caja;
-                cajas.Add(cajaMultiplicar);
-
+                this.cajas.Add(cajaMultiplicar);
+                }
             }
-            cajas.Reverse();
+            this.cajas.Reverse();
         }
 
-        
+
 
         private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar))
             {
-                e.Handled=true;
+                e.Handled = true;
             }
         }
 
@@ -40,7 +41,7 @@ namespace Fundamentos
         {
             int numero = int.Parse(this.txtNumero.Text);
             int length = this.cajas.Count;
-            for(int i = 1; i <= length; i++)
+            for (int i = 1; i <= length; i++)
             {
                 cajas[i - 1].Text = (numero * i).ToString();
             }
