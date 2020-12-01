@@ -1,14 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ProyectoClases
 {
+
+
+    public enum TipoGenero
+    {
+        Masculino = 0, Femenino = 1
+    }
+    public enum Paises
+    {
+        España = 0, Francia = 1, EuskalHerria = 2,
+    }
     public class Persona
     {
+        #region Constructores persona
+        public Persona()
+        {
+            Debug.WriteLine("Constructor vacio Persona");
+        }
+        public Persona(string name, string surname)
+        {
+            Debug.WriteLine("Constructor Persona con params");
+            this.Nombre = name;
+            this.Apellido = surname;
+        }
+        public Persona(string nom, string ape, string completo)
+        {
+            Debug.WriteLine("Constructor vacio Persona");
+        }
+        #endregion
+
         #region Propiedades
+        private Direccion _Domicilio;
+        public Direccion Domicilio
+        {
+            get { return this._Domicilio; }
+            set { this._Domicilio = value; }
+
+        }
+        public Direccion DomicilioVacaciones { get; set; }
         //Todo lo que pongamos aqui, lo podremos desplegar/colapsar
         /*
          * Campos de la clase:
@@ -46,6 +82,21 @@ namespace ProyectoClases
                 this._Nombre = value;
             }
         }
+        private String _Apellido;
+
+        public string Apellido
+        {
+            get
+            {
+                //Devolvemos un valor
+                return this._Apellido;
+            }
+            set
+            {
+                //Establecemos un valor
+                this._Apellido = value;
+            }
+        }
         //Campo de la propiedad
         private int _Edad;
         public int Edad
@@ -73,7 +124,67 @@ namespace ProyectoClases
 
             }
         }
+        private TipoGenero _Genero;
+        public TipoGenero Genero
+        {
+            get { return this._Genero; }
+            set
+            {
+                //Hay que manejar los errores, y comparar para ver si lo que nos envian, coincide con las posibilidades
+                if (value != TipoGenero.Femenino && value != TipoGenero.Masculino)
+                {
+                    throw new Exception("Rango de Generos not supported, coleguita");
+                }
 
+                this._Genero = value;
+            }
+
+        }
+        private Paises _Nacionalidad;
+        public Paises Nacionalidad
+        {
+            get { return this._Nacionalidad; }
+            set { this._Nacionalidad = value; }
+        }
+        //Una propiedad Indizada contiene multiples elementos
+        //Es un conjunto, y necesitamos si o tambien un campo para manejar la propiedad
+        //Quiero crear una prop que tenga espacio para descripciones de la persona
+        private string[] _Descripciones = new string[5];
+        //UNA PROPIEDAD INDIZADA NO TIENE NAME, SE USA this PARA CREARLA
+        public string this[int indice]
+        {
+            get { return this._Descripciones[indice]; }
+            set { this._Descripciones[indice] = value; }
+        }
+        #endregion
+        #region Metodos de la clase Persona
+        //Seguimos teniendo Metodos void y Metodos return
+        //Tambien Metodos con params opcionales
+        /*
+         * public void MetodoParamsOpcionales(int numero, int opcional = 99)
+         *  {
+         *  //Numero es obligatorio, Opcional, al estar igualado por defecto, es opcional
+         *  //Aqui el Codigo
+         *  }
+         */
+        //SOBRECARGA DE UN METODO
+        //Es decir, un metodo tiene diferentes formas, o sea, distintos codigos.
+        //Para poder hacer sobrecarga, el metodo tiene que llamarse igual y tener distintos parametros y tipos
+        public string GetNombreCompleto()
+        {
+            return this.Nombre + ", " + this.Apellido;
+        }
+        public string GetNombreCompleto(bool ordenacion)
+        {
+            if (ordenacion)
+            {
+                return this.Apellido + ", " + this.Nombre;
+            }
+            else
+            {
+                return this.GetNombreCompleto();
+            }
+        }
         #endregion
     }
 }
