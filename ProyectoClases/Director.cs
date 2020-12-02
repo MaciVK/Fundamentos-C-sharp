@@ -13,10 +13,23 @@ namespace ProyectoClases
         {
             this.SalarioMinimo += 200;
         }
-        public int GetVacaciones()
+        //OVERRIDEN
+        public new int GetVacaciones()
+        {
+            Debug.WriteLine("GetVacaciones() new de Director");
+            return base.GetVacaciones() + 3;
+        }
+
+        //public override int GetVacaciones()
+        //{
+        //    Debug.WriteLine("GetVacaciones() Overriden de Director");
+        //    return base.GetVacaciones()+3;
+        //}
+        //OVERLOAD
+        public int GetVacaciones(int diasExtra)
         {
             Debug.WriteLine("GetVacaciones() Director");
-            return 25;
+            return GetVacaciones() + diasExtra;
         }
     }
 }

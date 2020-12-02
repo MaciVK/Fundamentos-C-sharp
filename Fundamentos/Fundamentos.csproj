@@ -196,6 +196,24 @@
     <Compile Include="Form26TemperaturasMesesClases.Designer.cs">
       <DependentUpon>Form26TemperaturasMesesClases.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form27LeerFicherosPlanos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form27LeerFicherosPlanos.Designer.cs">
+      <DependentUpon>Form27LeerFicherosPlanos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form28FicheroProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form28FicheroProductos.Designer.cs">
+      <DependentUpon>Form28FicheroProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form29SerializarClase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form29SerializarClase.Designer.cs">
+      <DependentUpon>Form29SerializarClase.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormConversion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +302,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form26TemperaturasMesesClases.resx">
       <DependentUpon>Form26TemperaturasMesesClases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form27LeerFicherosPlanos.resx">
+      <DependentUpon>Form27LeerFicherosPlanos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form28FicheroProductos.resx">
+      <DependentUpon>Form28FicheroProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form29SerializarClase.resx">
+      <DependentUpon>Form29SerializarClase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormConversion.resx">
       <DependentUpon>FormConversion.cs</DependentUpon>
