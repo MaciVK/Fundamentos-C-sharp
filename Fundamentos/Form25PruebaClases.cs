@@ -61,7 +61,8 @@ namespace Fundamentos
             Director dire = new Director();
             this.lstDatos.Items.Add("Director: " + dire.GetSalarioMinimo());
             this.lstDatos.Items.Add("Empleado: " + emp.GetSalarioMinimo());
-
+            //this.lstDatos.Items.Add("Vacaciones Empleado: " + emp.GetVacaciones());
+            this.lstDatos.Items.Add("Vacaciones Director: " + dire.GetVacaciones());
         }
     }
 }

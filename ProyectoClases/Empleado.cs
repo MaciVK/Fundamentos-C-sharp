@@ -24,10 +24,19 @@ namespace ProyectoClases
         #endregion
         #region Propiedades Empleado
         protected int SalarioMinimo { get; set; }
+        #endregion
+        #region Metodos Empleado
         public int GetSalarioMinimo()
         {
             return this.SalarioMinimo;
         }
+
+        public int GetVacaciones()
+        {
+            Debug.WriteLine("GetVaacaciones() Empleado");
+            return 22;
+        }
+
         #endregion
 
     }
