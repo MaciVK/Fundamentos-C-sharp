@@ -50,7 +50,7 @@
             this.label1.Location = new System.Drawing.Point(13, 33);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 18);
+            this.label1.Size = new System.Drawing.Size(79, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             // 
@@ -60,7 +60,7 @@
             this.label2.Location = new System.Drawing.Point(13, 95);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 18);
+            this.label2.Size = new System.Drawing.Size(64, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Precio";
             // 
@@ -68,20 +68,20 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(16, 54);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 24);
+            this.txtNombre.Size = new System.Drawing.Size(100, 29);
             this.txtNombre.TabIndex = 2;
             // 
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(16, 116);
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(100, 24);
+            this.txtPrecio.Size = new System.Drawing.Size(100, 29);
             this.txtPrecio.TabIndex = 3;
             this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // btnInsertar
             // 
-            this.btnInsertar.Location = new System.Drawing.Point(152, 32);
+            this.btnInsertar.Location = new System.Drawing.Point(189, 33);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(109, 51);
             this.btnInsertar.TabIndex = 4;
@@ -91,7 +91,7 @@
             // 
             // btnLeer
             // 
-            this.btnLeer.Location = new System.Drawing.Point(152, 89);
+            this.btnLeer.Location = new System.Drawing.Point(189, 90);
             this.btnLeer.Name = "btnLeer";
             this.btnLeer.Size = new System.Drawing.Size(109, 51);
             this.btnLeer.TabIndex = 5;
@@ -101,7 +101,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(152, 146);
+            this.btnGuardar.Location = new System.Drawing.Point(189, 147);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(109, 51);
             this.btnGuardar.TabIndex = 6;
@@ -112,19 +112,19 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(299, 11);
+            this.label3.Location = new System.Drawing.Point(336, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 18);
+            this.label3.Size = new System.Drawing.Size(95, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "Productos";
             // 
             // lstProductos
             // 
             this.lstProductos.FormattingEnabled = true;
-            this.lstProductos.ItemHeight = 18;
-            this.lstProductos.Location = new System.Drawing.Point(302, 32);
+            this.lstProductos.ItemHeight = 24;
+            this.lstProductos.Location = new System.Drawing.Point(339, 33);
             this.lstProductos.Name = "lstProductos";
-            this.lstProductos.Size = new System.Drawing.Size(204, 166);
+            this.lstProductos.Size = new System.Drawing.Size(204, 148);
             this.lstProductos.TabIndex = 8;
             this.lstProductos.SelectedIndexChanged += new System.EventHandler(this.lstProductos_SelectedIndexChanged);
             // 
@@ -174,15 +174,15 @@
             this.lblProducto.ForeColor = System.Drawing.Color.IndianRed;
             this.lblProducto.Location = new System.Drawing.Point(13, 162);
             this.lblProducto.Name = "lblProducto";
-            this.lblProducto.Size = new System.Drawing.Size(113, 18);
+            this.lblProducto.Size = new System.Drawing.Size(143, 24);
             this.lblProducto.TabIndex = 13;
             this.lblProducto.Text = "Producto 0 de 0";
             // 
             // Form28FicheroProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 319);
+            this.ClientSize = new System.Drawing.Size(732, 347);
             this.Controls.Add(this.lblProducto);
             this.Controls.Add(this.btnUltimo);
             this.Controls.Add(this.btnSiguiente);

@@ -8,13 +8,17 @@ namespace ProyectoClases
 {
     public class Producto
     {
+        public Producto()
+        {
+
+        }
         public Producto(string name, int price)
         {
             this.Nombre = name;
             this.Precio = price;
         }
-        protected string Nombre { get; set; }
-        protected int Precio { get; set; }
+        public string Nombre { get; set; }
+        public int Precio { get; set; }
 
         public string GetProducto()
         {
